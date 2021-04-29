@@ -1,12 +1,18 @@
 import styled from 'styled-components';
-import { Button } from '../../styles/reusable';
+import { breakpoints, Button } from '../../styles/reusable';
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+`;
 
 export const PostWrapper = styled.div`
   height: 60vh;
   width: 100vw;
   display: grid;
   place-items: center;
-  margin-top: 2em;
 `;
 
 export const PostInner = styled.div`
@@ -20,6 +26,10 @@ export const Comments = styled.section`
   margin-top: 2em;
   border-bottom: 2px solid ${({ theme }) => theme.palette.lightGray};
   box-shadow: 11px 26px 20px -14px rgba(0, 0, 0, 0.1);
+
+  @media ${breakpoints.lg} {
+    width: 80vw;
+  }
 `;
 
 export const CommentsHeader = styled.section`

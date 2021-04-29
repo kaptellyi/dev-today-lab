@@ -31,33 +31,35 @@ const ViewPost: FC<PostI> = (post) => {
   if (isFallback) return <Loading />;
   return (
     <Layout title={post.title}>
-      <Styled.PostWrapper>
-        <Styled.PostInner>
-          <Post title={post.title} body={post.body} showCorner />
-        </Styled.PostInner>
-      </Styled.PostWrapper>
-      <Styled.Comments>
-        <Styled.CommentsHeader>
-          <h2>Comments: {comments.length}</h2>
-          {loading && <Loading />}
-          {error && <Error />}
-          <Styled.CommentWrite
-            placeholder="Write your thoughts..."
-            value={comment}
-            showFull={!!comment.length}
-            onChange={(e) => setComment(e.target.value)}
-          />
-          <Styled.ConfirmButton
-            disable={!comment.length || loading}
-            onClick={onPostComment}
-          >
-            Post
-          </Styled.ConfirmButton>
-        </Styled.CommentsHeader>
-        {comments.map(({ body, id }) => (
-          <Styled.Comment key={id}>{body}</Styled.Comment>
-        ))}
-      </Styled.Comments>
+      <Styled.Wrapper>
+        <Styled.PostWrapper>
+          <Styled.PostInner>
+            <Post title={post.title} body={post.body} showCorner />
+          </Styled.PostInner>
+        </Styled.PostWrapper>
+        <Styled.Comments>
+          <Styled.CommentsHeader>
+            <h2>Comments: {comments.length}</h2>
+            {loading && <Loading />}
+            {error && <Error />}
+            <Styled.CommentWrite
+              placeholder="Write your thoughts..."
+              value={comment}
+              showFull={!!comment.length}
+              onChange={(e) => setComment(e.target.value)}
+            />
+            <Styled.ConfirmButton
+              disable={!comment.length || loading}
+              onClick={onPostComment}
+            >
+              Post
+            </Styled.ConfirmButton>
+          </Styled.CommentsHeader>
+          {comments.map(({ body, id }) => (
+            <Styled.Comment key={id}>{body}</Styled.Comment>
+          ))}
+        </Styled.Comments>
+      </Styled.Wrapper>
     </Layout>
   );
 };
