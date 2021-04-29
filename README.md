@@ -9,6 +9,12 @@ npm run dev
 # or
 yarn dev
 ```
+Use eslint or prettier:
+```bash
+npm run lint
+# and
+npm run format
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
