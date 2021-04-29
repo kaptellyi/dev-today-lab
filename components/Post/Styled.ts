@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from '../../../styles/reusable';
+import { Button } from '../../styles/reusable';
 
 export const PostWrapper = styled.div`
   height: 60vh;

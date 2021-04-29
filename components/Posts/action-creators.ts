@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { Dispatch } from 'react';
 import instance from '../../api/axios';
 import { definePaginateIndex } from '../../helpers';

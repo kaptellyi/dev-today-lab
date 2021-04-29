@@ -21,7 +21,6 @@ const todoReducer = (state = initialState, action: Actions): PostsState => {
         loading: null,
       };
     case ActionTypes.UPDATE_POST:
-      console.log(state.posts, action);
       return {
         ...state,
         posts: state.posts.map((p) =>

@@ -2,8 +2,8 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { createWrapper } from 'next-redux-wrapper';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import postsReducer from '../pages/posts/reducer';
-import commentsReducer from '../pages/posts/Post/reducer';
+import postsReducer from '../components/Posts/reducer';
+import commentsReducer from '../components/Post/reducer';
 
 const middleware = [thunk];
 

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write pages/**/*.ts{,x}",
-    "lint": "tsc --noEmit && eslint pages/**/*.ts{,x}"
+    "lint": "tsc --noEmit && eslint components/**/*.ts{,x}"
   },
   "dependencies": {
     "axios": "^0.21.1",

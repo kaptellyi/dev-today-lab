@@ -1,9 +1,9 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Posts from './posts/Posts';
+import Posts from '../components/Posts';
 import { get24hTimestamp } from '../helpers';
-import { PostI } from './posts/types';
+import { PostI } from '../components/Posts/types';
 import instance from '../api/axios';
 
 export default ({ posts }) => {

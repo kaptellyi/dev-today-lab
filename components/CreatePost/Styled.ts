@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints } from '../../../styles/reusable';
+import { breakpoints } from '../../styles/reusable';
 
 export const Wrapper = styled.form`
   position: absolute;

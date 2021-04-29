@@ -1,5 +1,5 @@
 import { Dispatch } from 'react';
-import instance from '../../../api/axios';
+import instance from '../../api/axios';
 import { ActionTypes, Actions, CommentI, CommentFormI } from './types';
 
 export const commentsLoading = (): Actions => {

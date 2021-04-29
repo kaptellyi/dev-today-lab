@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { PostI } from './types';
-import Post from './Post';
+import { PostI } from '../../components/Posts/types';
+import Post from '../../components/Post';
 import { get24hTimestamp } from '../../helpers';
 import instance from '../../api/axios';
 

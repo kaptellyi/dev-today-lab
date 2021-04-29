@@ -2,13 +2,13 @@ import React, { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import * as Styled from './Styled';
-import Post from '../../../UI/Post';
-import { PostI } from '../types';
-import Loading from '../../../UI/Loading';
-import { useTypedSelector } from '../../../hooks';
+import Post from '../UI/Post';
+import { PostI } from '../Posts/types';
+import Loading from '../UI/Loading';
+import { useTypedSelector } from '../../hooks';
 import { setComments, createComment } from './action-creators';
-import Error from '../../../UI/Error';
-import Layout from '../../../components/Layout';
+import Error from '../UI/Error';
+import Layout from '../Layout';
 
 const ViewPost: FC<PostI> = (post) => {
   const { isFallback } = useRouter();

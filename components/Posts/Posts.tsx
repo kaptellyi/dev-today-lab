@@ -4,12 +4,12 @@ import React, { FC, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { definePaginateIndex, debounce } from '../../helpers';
 import { useTypedSelector } from '../../hooks';
-import Error from '../../UI/Error';
-import Post from '../../UI/Post';
+import Error from '../UI/Error';
+import Post from '../UI/Post';
 import { paginateAction, setPosts } from './action-creators';
 import * as Styled from './Styled';
 import { PostI } from './types';
-import Layout from '../../components/Layout';
+import Layout from '../Layout';
 
 interface Props {
   serverPosts: PostI[];

@@ -2,10 +2,10 @@ import React, { FC, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import Link from 'next/link';
-import { createPost } from '../action-creators';
-import Post from '../../../UI/Post';
+import { createPost } from '../Posts/action-creators';
+import Post from '../UI/Post';
 import * as Styled from './Styled';
-import { Button } from '../../../styles/reusable';
+import { Button } from '../../styles/reusable';
 
 const New: FC = () => {
   const { push } = useRouter();
