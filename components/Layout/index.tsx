@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC } from 'react';
-import { Button } from '../../styles/reusable';
 import * as Styled from './Styled';
 
 interface Props {

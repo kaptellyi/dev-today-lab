@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { breakpoints } from '../../styles/reusable';
 
 export const Navigation = styled.nav`
   height: 4.5em;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
