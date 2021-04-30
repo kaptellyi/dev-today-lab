@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { breakpoints } from '../../styles/reusable';
 
 export const Wrapper = styled.form`
+  margin-top: 2em;
   position: absolute;
   height: 80%;
   width: 96%;

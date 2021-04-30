@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
@@ -59,9 +58,6 @@ const Posts: FC<Props> = ({ serverPosts }) => {
           ))}
         </Styled.Posts>
       </Styled.Wrapper>
-      <Link href={process.env.POSTS_NEW}>
-        <Styled.CreateButton>create post</Styled.CreateButton>
-      </Link>
     </Layout>
   );
 };
